@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <meta name="author" content="Riya Kadakia">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Riya Kadakia's professional website">
+    <script defer src="./static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Kadakia</title>
+</head>
+
+<div class="grid-container">
+    <nav>
+        <ul class="nav-links">
+            <img src="./static/DuqInclineLogo.png" alt="Logo" width="50" height="50">
+            <li><a href="">Home</a></li>
+            <li><a href="./views/trips.html">Tours</a></li>
+            <li><a href="./views/visit.html">Visit</a></li>
+            <li><a href="./views/about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header>Duquesne Incline</header>
+    <figure>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img alt="Image of the Incline from the bottom" src="./static/img33.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img alt="Image from top of the Incline in the night" src="./static/img2.png">
+            </div>
+          
+            <div class="mySlides fade">
+              <img alt="Image of the Incline and the view during the day" src="./static/img3.png">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="dot-section">
+            <br>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </figure>
+    <main id="index-main">
+      <h2>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. </h2>
+    </main>
+    <summary>
+        <table id="index-summary">
+          <tr>
+              <th><b>Hours of Operation</b></th>
+              <th><b>Contact Information</b></th>
+          </tr>
+          <tr>
+              <th>Open 365 Days a Year</th>
+              <th>1197 West Carson Street, Pittsburgh, PA 15219</th>
+          </tr>
+          <tr>
+            <th>Everyday from: 6:30 a.m. to 12:30 a.m.</th>
+            <th>Phone Number: 412.381.1665</th>
+          </tr>
+          <tr>
+            <th>No Advance Tickets Needed</th>
+            <th>duq.incline@duquesneincline.org</th>
+        </tr>
+      </table>
+
+
+    </summary>
+    
+    <footer>Photos courtesy of Expedia.com, VisitPittsburgh, and DiscoverTheBurgh</footer>
+</div>
+</html>
+
+

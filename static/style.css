@@ -1,0 +1,327 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding: 0px;
+    margin: 0px;
+    background-color: #E9F3FF;
+}
+
+
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+th {
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:#172E2E;
+    color:#C8E7E7;
+    width:fit-content;
+}
+
+#table_h {
+    background-color: #C8E7E7;
+    color:#172E2E;
+}
+
+b {
+    color: #C8E7E7;
+    background-color: #172E2E;
+    font-weight:700;
+    font-size: large;
+}
+
+#index-summary {
+    width: 50%;   
+    margin: 0 auto;
+}
+ 
+* main {
+    text-align: center;
+}
+
+
+.grid-container-about {
+    display: grid;
+    grid-template-areas: 
+    'nav nav' 
+    'header header'
+    'figure figure-side'
+    'main gift'
+    'footer footer';
+}
+
+.grid-container-visit {
+    display: grid;
+    grid-template-areas: 
+    'nav nav' 
+    'header header'
+    'bottom-content summary-side'
+    'main main'
+    'figure figure'    
+    'footer footer';
+}
+
+summary-side {
+    grid-area: summary-side;
+    background-color: #172E2E;
+    color:#E4F7F7;
+    height:auto;
+    padding:20px;
+}
+
+gift {
+    grid-area: gift;
+    height:auto;
+    padding:20px;
+}
+
+figure-side {
+    grid-area: figure-side;
+    background-color: #031F50;
+    color:#E9F3FF;
+    height:auto;
+    padding:20px;
+}
+
+header {
+    font-size:xx-large;
+    font-weight: 600;
+    text-align: center;
+    grid-area: header;
+    animation: ani 2s ease-in-out infinite;
+}
+
+nav {
+    grid-area: nav;
+    animation: mymove 5s infinite;
+    padding-top: 30px; 
+}
+
+.gift-h {
+    background-color: #172E2E;
+    font-size: x-large;
+    color:#C8E7E7;
+    text-decoration: underline;
+}
+
+.trips-h {
+    background-color: #031F50 ;
+    font-size: x-large;
+    color:white;
+}
+
+#fieldTrip {
+    background-color: #172E2E;
+    font-size: x-large;
+    color:#C8E7E7;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#index-main {
+    text-align: center;
+}
+
+figure {
+    grid-area: figure;
+    background-color: #031F50;
+    color:#E9F3FF;
+    height:auto;
+    padding:20px;
+}
+
+form {
+    background-color: #172E2E;
+    width:auto;
+    padding:20px;
+}
+
+#invalidForm {
+    background-color: #172E2E;
+    color:#C8E7E7;
+}
+
+.product-img {
+    width:175px;
+    height:125px;
+}
+
+.button {
+    background-color: #C8E7E7;
+    border: none;
+    border-radius: 5px;
+    color:black;
+}
+
+.formlabels {
+    background-color: #172E2E;
+    color:#C8E7E7;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    background-color: #031F50;
+}
+
+main {
+    grid-area: main;
+    height:auto;
+    padding:20px;
+}
+
+summary {
+    grid-area: bottom-content;
+    background-color: #172E2E;
+    color:#E4F7F7;
+    height:auto;
+    padding:20px;
+}
+
+footer {
+    grid-area: footer;
+    height:auto;
+    background-color: #C8E7E7;
+    padding:10px;
+    height:auto;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+    
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer; 
+}
+
+nav a.active {
+    color: rgb(0, 0, 0);
+    background-color: #ff0077;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+.mySlides img {
+    width: 100%; /* Adjust to container width */
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Crop to fit without stretching */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding-top:30px;
+    background-color: #031F50;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a background color */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dot-section {
+    text-align:center;
+    background-color: #031F50;
+}
+
+.numbertext {
+    display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}

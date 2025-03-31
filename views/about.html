@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Riya Kadakia">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Riya Kadakia's professional website">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Kadakia</title>
+</head>
+
+<div class="grid-container-about">
+    <nav>
+        <ul class="nav-links">
+            <img src="../static/DuqInclineLogo.png" alt="Logo" width="50" height="50">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./trips.html">Tours</a></li>
+            <li><a href="./visit.html">Visit</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        About Us
+    </header>
+    <figure>
+        <div class="trips-h"> History </div><br>
+        
+            The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.
+Although plans for a freight and passenger incline are known to have existed much earlier, financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed.
+At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.
+    </figure>   
+    
+    <figure-side> 
+        Click on the Photo to learn more! <br>     
+        <a href="https://en.wikipedia.org/wiki/Duquesne_Incline">
+            <img src="../static/historyimg.png" alt="Historical Incline Image" width="380" height="300">
+        </a>
+        <br>
+    </figure-side> 
+    <main>
+            <form>
+                <div class="gift-h">Join Our Mailing List!</div>
+                <br>
+                <label class="formlabels" for="name">Your name (required)</label><br>
+                <input type="text" id="name" name="name" autocomplete="off"><br><br>
+                <label class="formlabels" for="email">Your email (required)</label><br>
+                <input type="text" id="email" name="email" autocomplete="off" required><br><br>
+
+                <label class="formlabels" for="sms-checkbox">I would like to receive messages via SMS text</label>
+                <input type="checkbox" id="sms-checkbox" name="sms-checkbox"> <br><br>
+
+                <label class="formlabels" for="mobile">Mobile Phone (Optional)</label><br>
+                <input type="number" id="mobile" name="mobile"><br>
+                <br>
+                <label class="formlabels" for="zip">Zip Code (Optional)</label><br>
+                <input type="number" id="zip" name="zip" max="99999"><br><br>
+
+                <input class="button" type="submit"  onclick="validForm()" value="SEND"><br><br>
+                <p id="invalidForm"></p>
+            </form>
+    </main>
+    <gift>
+        <h2>Gift Shop</h2>
+        <br>
+        Click on the Products to see more!
+        <br>
+        <br>
+        <br>
+        <div class="product">
+            <h3>Handmade Incline Wooden Ornament</h3>
+            <a href="https://www.facebook.com/TheDuquesneIncline">
+                <img class="product-img" src="../static/product1.png" alt="Gift Shop Product 1">
+            </a>
+            <div class="product-info"> 
+    
+            </div>
+        </div>
+        <br>
+        <div class="product">
+            <h3>Duquesne Incline Shot Glasses</h3>
+            <a href="https://www.facebook.com/TheDuquesneIncline">
+                <img class="product-img" src="../static/product2.png" alt="Gift Shop Product 2">
+            </a>
+            <div class="product-info"> 
+
+            </div>
+        </div>
+    </gift>
+    <footer>Photo courtesy of asme.org</footer>
+</div>
+</html>
